@@ -22,7 +22,7 @@ body{
 .wrapper header{
 font-size: 30px;
 font-weight: 600;
-margin-bottom: 5px;
+margin-bottom: 15px;
 }
 .inputField{
     display: flex;
@@ -48,6 +48,12 @@ margin-bottom: 5px;
     cursor: pointer;
     border-radius: 3px;
     margin-left: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.inputField button.active{
+    opacity: 1;
+    pointer-events: auto;
 }
 .wrapper .todoList{
     max-height:250px;
@@ -82,7 +88,7 @@ margin-bottom: 5px;
 .wrapper .footer{
     display: flex;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 5px;
     justify-content: space-between;
     align-items: center;
 }
